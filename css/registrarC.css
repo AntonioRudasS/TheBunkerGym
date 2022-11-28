@@ -1,0 +1,15 @@
+body{
+    background-color: black;
+    background-image: url("../img/WhatsApp\ Image\ 2022-11-11\ at\ 18.07.25.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: Arial;
+}
+
+.volver button{
+    border: 0ch;
+    border-radius: 10px;
+    background-color: #5DBFC2;
+    height: 37px;
+    width: 140px;
+}
