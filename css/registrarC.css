@@ -13,3 +13,60 @@ body{
     height: 37px;
     width: 140px;
 }
+
+.form-registrar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 90px;
+}
+
+.form-registrar button{
+    border: 0ch;
+    border-radius: 10px;
+    background-color: #5DBFC2;
+    height: 37px;
+    width: 140px;
+    font-family: Arial;
+}
+
+.form-registro-cliente{
+    margin: 10px;
+}
+
+.form-registro-cliente h1{
+    color: antiquewhite;
+    font-display: Billionare Medium Grunge;
+    font-weight: 800;
+}
+
+.form-registro-cliente label{
+    font-display: Billionare Medium Grunge;
+    font-weight: 800;
+    color: antiquewhite;
+    padding-bottom: 5px;
+}
+
+.form-registro-cliente form{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input{
+    font-display: Billionare Medium Grunge;
+    font-weight: 800;
+    background-color: #5DBFC2;
+    border: 0ch;
+    border-radius: 10px;
+    height: 25px;
+}
+
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
