@@ -8,49 +8,53 @@
         <link rel="stylesheet" href="../css/registrarC.css">
     </head>
     <body>
+
+        
         <div class="form-registrar">
             <div class="form-registro-cliente">
                 <h1>REGISTRO DE CLIENTE</h1>
-                <form>
-                    <label style="color: white;">Nombre</label>
-                    <input type="text" placeholder="   Nombre">
-                </form>
-                <form>
-                    <label>Apellido</label>
-                    <input type="text" placeholder="   Apellido">
-                </form>
-                <form>
-                    <label>Cedula</label>
-                    <input type="text" placeholder="   Cedula">
-                </form>
-                <form>
-                    <label>Numero telefónico</label>
-                    <input type="text" placeholder="   celular">
-                </form>
-                <form>
-                    <label>Correo</label>
-                    <input type="text" placeholder="   correo">
-                </form>
-                <form>
-                    <label>Peso</label>
-                    <input type="text" placeholder="   peso">
-                </form>
-                <form>
-                    <label>Informacion adicional</label>
-                    <input type="text" placeholder="   informacion">
-                </form>
-                <div class="buttons">
-                    <div class="B-volver">
-                        <form action="../src/consultas.html">
-                            <button>Volver</button>
-                        </form>
+                <form id="registroForm">
+                    <div class="container">
+                        <label style="color: white;">Nombre</label>
+                        <input type="text" placeholder="   Nombre" id="nombre" name="nombre">
                     </div>
-                    <div class="B-registrar">
-                        <form action="../src/consultas.html">
-                            <button>Registrar</button>
-                        </form>
+                    <div class="container">
+                        <label>Apellido</label>
+                        <input type="text" placeholder="   Apellido" id="apellido" name="apellido">
                     </div>
-                </div>
+                    <div class="container">
+                        <label>Cedula</label>
+                        <input type="text" placeholder="   Cedula" id="cedula" name="cedula">
+                    </div>
+                    <div class="container">
+                        <label>Numero telefónico</label>
+                        <input type="text" placeholder="   celular" id="celular" name="celular">
+                    </div>
+                    <div class="container">
+                        <label>Correo</label>
+                        <input type="text" placeholder="   correo" id="correo" name="correo">
+                    </div>
+                    <div class="container">
+                        <label>Peso</label>
+                        <input type="text" placeholder="   peso" id="peso" name="peso">
+                    </div>
+                    <div class="container">
+                        <label>Informacion adicional</label>
+                        <input type="text" placeholder="   informacion" id="i_adicional" name="i_adicional">
+                    </div>
+
+                    <div class="container-buttons">
+                        <button>registrar</button>
+                    </div>
+                </form>
+
+                <script>
+                    const form = document.getElementById("registroForm")
+                    form.addEventListener("submit", function(event){
+                        event.preventDefault();
+                        let transactionFormData = new FormData(form);
+                    })
+                </script>
             </div>
             
         </div>

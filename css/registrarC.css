@@ -6,20 +6,19 @@ body{
     font-family: Arial;
 }
 
-.volver button{
-    border: 0ch;
-    border-radius: 10px;
-    background-color: #5DBFC2;
-    height: 37px;
-    width: 140px;
-}
-
 .form-registrar{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px;
     margin: 90px;
+}
+
+.container-buttons{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    align-content: center;
 }
 
 .form-registrar button{
@@ -46,6 +45,11 @@ body{
     font-weight: 800;
     color: antiquewhite;
     padding-bottom: 5px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
 }
 
 .form-registro-cliente form{
