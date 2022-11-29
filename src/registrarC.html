@@ -42,19 +42,17 @@
                         <label>Informacion adicional</label>
                         <input type="text" placeholder="   informacion" id="i_adicional" name="i_adicional">
                     </div>
-
-                    <div class="container-buttons">
-                        <button>registrar</button>
-                    </div>
                 </form>
+                <div class="container-buttons">
+                    <form action="./consultas.html">
+                        <button>Volver</button>
+                    </form>
+                    <form action="">
+                        <button>registrar</button>
+                    </form>
+                </div>
 
-                <script>
-                    const form = document.getElementById("registroForm")
-                    form.addEventListener("submit", function(event){
-                        event.preventDefault();
-                        let transactionFormData = new FormData(form);
-                    })
-                </script>
+                <script src="../js/index.js"></script>
             </div>
             
         </div>
